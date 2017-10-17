@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example2.acer.bluetoothdemo.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:onClick="turnBluotthOff"
+        android:text="Turn Blutoth Off" />
+
+    <Button
+        android:id="@+id/findDiscoverableDevise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonOff"
+        android:layout_alignStart="@+id/buttonOff"
+        android:layout_below="@+id/buttonOff"
+        android:layout_marginTop="20dp"
+        android:onClick="findDiscoverableDevise"
+        android:text="find discoverable Devise" />
+
+    <Button
+        android:id="@+id/viewPiredDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/findDiscoverableDevise"
+        android:layout_alignStart="@+id/findDiscoverableDevise"
+        android:layout_below="@+id/findDiscoverableDevise"
+        android:layout_marginTop="18dp"
+        android:onClick="viewPiredDevice"
+        android:text="view Pired Device" />
+
+    <ListView
+        android:id="@+id/viewPairentDeviseList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/viewPiredDevice"
+        android:layout_alignStart="@+id/viewPiredDevice"
+        android:layout_below="@+id/viewPiredDevice"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/turnBluotthOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/findDiscoverableDevise"
+        android:layout_toEndOf="@+id/findDiscoverableDevise"
+        android:layout_toRightOf="@+id/findDiscoverableDevise"
+        android:onClick="turnBluotthOn"
+        android:text="turn Bluotth On" />
+</RelativeLayout>
